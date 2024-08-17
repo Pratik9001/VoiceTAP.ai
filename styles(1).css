@@ -1,0 +1,53 @@
+/* Custom Styles */
+.section {
+    padding: 100px 0;
+}
+
+#home {
+    background-image: url('voice-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#voice-to-text {
+    animation: fadeIn 1s ease-in-out;
+}
+
+#text-to-voice {
+    animation: slideInLeft 1s ease-in-out;
+}
+
+#prediction {
+    animation: slideInRight 1s ease-in-out;
+}
+
+#analysis {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
